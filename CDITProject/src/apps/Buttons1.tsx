@@ -11,51 +11,60 @@ import {
 const Separator = () => <View style={styles.separator} />;
 
 // const App1 = () => (
- class App1 extends React.Component{
+ class Buttons1 extends React.Component{
     render(){
         return(
             <SafeAreaView style={styles.container}>
-            <View style = {{backgroundColor : 'red'}}>
+            <View >
+
             <Button
-                title="Press me"
-                onPress={() => Alert.alert('Simple Button pressed')}
-                color="#841584"
-                accessibilityLabel="Learn more about this purple button"
+                title="accessibilityLabel"
+                onPress={() => Alert.alert('accessibilityLabel Button pressed')}
+                color="#red"
+                accessibilityLabel="accessibilityLabel button"
               />
-              <Button
-                title="Press me"
-                onPress={() => Alert.alert('Simple Button pressed')}
-                color="#841584"
-                accessibilityLabel="Learn more about this purple button"
+
+            <Button
+                title="accessibilityLanguage"
+                onPress={() => Alert.alert('A value indicating which language should be used by the screen reader')}
+                color="#red"
+                
               />
+
             </View>
             <Separator />
             <View>
-            <Button
-                title="Press me"
-                onPress={() => Alert.alert('Simple Button pressed')}
-                color="#841584"
-                accessibilityLabel="Learn more about this purple button"
-              />
               <Button
-                title="Press me"
+                title="accessibilityActions"
+                onPress={() => Alert.alert('property should contain a list of action objects.')}
+                
+                accessibilityLabel="accessibilityActions button"
+              />
+
+              <Button
+                title="onAcessibiltyAction"
                 color="#f194ff"
-                onPress={() => Alert.alert('Button with adjusted color pressed')}
+                onPress={() => Alert.alert(' an event containing the name of the action')}
               />
+
             </View>
+
             <Separator />
+
             <View>
-            <Button
+              <Button
                 title="Press me"
                 onPress={() => Alert.alert('Simple Button pressed')}
                 color="#841584"
                 accessibilityLabel="Learn more about this purple button"
               />
+
               <Button
                 title="Press me"
                 disabled
                 onPress={() => Alert.alert('Cannot press this one')}
               />
+
             </View>
             <Separator />
             <View>
@@ -107,4 +116,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App1;
+export default Buttons1;
